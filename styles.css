@@ -56,3 +56,10 @@ h2 {
 h3::before {
   content: "Question #"
 }
+
+nav li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
