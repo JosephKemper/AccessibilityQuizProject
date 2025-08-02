@@ -99,3 +99,10 @@ li > a {
   margin-left: auto;
   max-width: 600px
 }
+
+.info {
+  padding-top: 5px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+}
