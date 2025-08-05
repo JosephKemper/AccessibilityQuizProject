@@ -103,3 +103,13 @@ li > a {
 .info {
   padding: 10px 0 0 5px;
 }
+
+
+.formrow {
+  margin: 5px 0 0 0;
+  padding: 0 5px 0 5px;
+  }
+
+input {
+  font-size: 20px;
+}
