@@ -172,3 +172,7 @@ footer{
   display: flex;
   justify-content: center;
 }
+
+footer, footer a {
+  color: #d0d0d5;
+}
