@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference){
+* {
+  scroll-behavior: smooth;
+}
+}
+
 body {
   background: #f5f6f7;
   color: #1b1b32;
@@ -5,31 +11,27 @@ body {
   margin: 0;
 }
 
-#logo{
-  width: max(10rem, 18vw);
-  background-color: #0a0a23;
-  aspect-ratio: 35/4;
-  padding: 0.4rem;
-}
-
-header{
+header {
+  width: 100%;
   height: 50px;
   background-color: #1b1b32;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
   top: 0;
+}
+
+#logo {
+  width: max(10rem, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
 }
 
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
   text-align: center;
-}
-
-main {
-  padding-top: 25px;
 }
 
 nav {
@@ -48,39 +50,14 @@ nav > ul {
   height: 100%;
 }
 
-h1, h2 {
-  font-family: VerdanaL, sans-serif;
-}
-
-h2 {
-  border-bottom: 4px solid #dfdfe2;
-  margin-top: 0;
-  padding-top: 60px;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-h3::before {
-  content: "Question #"
-}
-
-nav li {
+nav > ul > li {
   color: #dfdfe2;
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
 }
 
-
-nav li:hover{
+nav > ul > li:hover {
   background-color: #dfdfe2;
   color: #1b1b32;
   cursor: pointer;
@@ -89,50 +66,58 @@ nav li:hover{
 li > a {
   color: inherit;
   text-decoration: none;
-  }
+}
 
-  section {
+main {
+  padding-top: 50px;
+}
+
+section {
   width: 80%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-left: auto;
-  max-width: 600px
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
 }
 
 .info {
   padding: 10px 0 0 5px;
 }
 
-
 .formrow {
-  margin: 5px 0 0 0;
-  padding: 0 5px 0 5px;
-  }
-
-input {
-  font-size: 20px;
+  margin-top: 30px;
+  padding: 0px 15px;
 }
 
-.info > input {
+input {
+  font-size: 1rem;
+}
+
+.info label, .info input {
+  display: inline-block;
+}
+
+.info input {
   width: 50%;
   text-align: left;
 }
 
 .info label {
   width: 10%;
-  min-width: 55px;  
-}
-
-.info input, .info label{
-  display: inline-block;
-}
-
-label{
+  min-width: 55px;
   text-align: right;
 }
 
-.question-block{
+.question-block {
   text-align: left;
   display: block;
   width: 100%;
@@ -140,10 +125,14 @@ label{
   padding-top: 5px;
 }
 
-h3{
+h3 {
   margin-top: 5px;
   padding-left: 15px;
   font-size: 1.375rem;
+}
+
+h3::before {
+  content: "Question #";
 }
 
 .question {
@@ -151,13 +140,12 @@ h3{
   padding-bottom: 0;
 }
 
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
 
-  .answers-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  button{
+button {
   display: block;
   margin: 40px auto;
   width: 40%;
@@ -167,27 +155,28 @@ h3{
   border: 3px solid #3b3b4f;
 }
 
-footer{
+footer {
   background-color: #2a2a40;
   display: flex;
   justify-content: center;
 }
 
-footer, footer a {
-  color: #d0d0d5;
+footer,
+footer a {
+  color: #dfdfe2;
 }
 
 address {
   text-align: center;
-  padding: 5px;
+  padding: 0.3em;
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: no-preference){
-* {
-  scroll-behavior: smooth;
-}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
